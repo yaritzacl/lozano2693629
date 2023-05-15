@@ -25,7 +25,6 @@ def menor(lista):
         if i<menor:
             menor=i
             return menor
-         
 def ordenaAseden(lista):
     for i in range(len(lista)):
         for a in range (i+1,len(lista)):
@@ -36,7 +35,7 @@ def ordenaAseden(lista):
             return lista
 
 def orden_desenden(lista):
-      for i in range(len(lista)):
+    for i in range(len(lista)):
         for a in range (i+1,len(lista)):
             if lista[i]<lista[a]:
                 aux=lista[i]

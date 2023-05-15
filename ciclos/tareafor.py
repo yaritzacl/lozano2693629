@@ -8,14 +8,14 @@ inc = int(input("Ingrese la cantidad a incrementar o decrementar: "))
 if inc > 0:
     # Incrementar numero 
     for i in range(inicio, fin+1, inc):
-     print(i, fin='')
+        print(i, fin='')
 
 else:
     # Decrementar numero 
     for i in range(inicio, fin-1, inc):
         print(i, end=' ')
 
-Print ("el numero decrementado o incremetado es :", )
+print ("el numero decrementado o incremetado es :", )
 # inicio del programa 
 # ingrese por pantalla un numero positivo 
 #ingrese el valor de multiplos de n 
