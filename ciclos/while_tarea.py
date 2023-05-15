@@ -4,9 +4,9 @@ num1=1
 num2=2
 may=0
 men=0
-while num!=0:#digite un numero
-     num1=int(input('ingrese numero'))
-     num2=int(input('ingrese numero'))
+while num!=0:#digite un numero 
+    num1=int(input('ingrese numero'))
+    num2=int(input('ingrese numero'))
 if num>may: # ejecucion del numero mayor de los numeros 
     may=num
 if num<menor and num!=0: # ejecucion del numero menor de los numeros
