@@ -1,17 +1,16 @@
-#inicio de funciones en el cual mostrara diferentes proceso con la lista
+
 import random
-from subprocess import list2cmdline
-def llenarLista(tam,rango): #se le asigna un nombre a la funcion y se le da unos parametros 
-    lista=[random.randrange(rango) for i in range(tam)]  #a la lista se le asigna un rango y tamaño con el metodo ramdon   
+def llenarLista(tam,rango):  
+    lista=[random.randrange(rango) for i in range(tam)]    
     return lista    
-def llenarLista2(tam,rango): #se le asigna un nombre a la funcion y se le da unos parametros 
-    lista2=[random.randrange(rango) for i in range(tam)]  #a la lista se le asigna un rango y tamaño con el metodo ramdon   
-    return lista2    
+def llenarLista2(tam,rango): 
+    lista2=[random.randrange(rango) for i in range(tam)]    
+    return lista2  
 
     
 l1=llenarLista(10,30)
 print(l1)
-l2=llenarLista2(10,20)
+l2=llenarLista2(10,30)
 print(l2)
     
 def sumaLista(lista):
@@ -49,14 +48,35 @@ def menor(lista):
     for i in lista:
         if i<menor:
             return menor 
-        
-def promedioLista(lista,lista2): 
-    sumaLista(lista)/len(lista2)
-    return promedioLista
+print("el promedio conjunto es:")        
+def promedioconjun(lista1,lista2): 
+    sumaLista(lista1)/len(lista2)
+    suma=0
+    for s in lista1:
+        suma+=s
+        for s in lista2:
+            suma+=s
+            promedio=suma/(len(lista1)+(len(lista2)))
+            return promedio 
+        print(promedio)
 
-print(round(promedioLista(l1),l2))
+def promedio(lista):
+    suma=0
+    for s in lista:
+        suma+=s
+    promedio= suma/(len(lista))
+    return promedio
 
-"""print(sumaLista(l1))
+def promedioLista(lista1,lista2):
+    promediocojun= promediocojun(lista1,lista2)
+    promedio1=promedio(lista1)
+    if promedio1>promedioconjun:
+        return f"el promedio es mayor de promedio conjunto"
+    elif promedio1<promedioconjun:
+        return f"el promedio es menor del promedio conjunto"
+    else:
+        return f"el promedio es igual "
+print(sumaLista(l1))
 print(sumaLista(l2))
-print(round(promedioLista(l1),l2))
-"""
+print()
+
